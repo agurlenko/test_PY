@@ -123,7 +123,7 @@ for line in f_src:
         #populating data row
         #to add metrix, you need to count it and append to row
         #get formatted output in str
-        outline=tmp[0]+'\t'+str(z).replace("[","").replace("]","")+"\t"+str(mx_idx)+"\t"+str(float(attr[mx_idx+1])/std_dev[mx_idx+1]) 
+        outline=tmp[0]+'\t'+str(z).replace("[","").replace("]","")+"\t"+str(mx_idx)+"\t"+str(float(attr[mx_idx+1])/std_dev[mx_idx]) 
         f_dest.write(outline+"\n")
 f_dest.close
 f_src.close
